@@ -1,0 +1,196 @@
+<!-- In this activity we will be modify this page to use a few interactive JavaScript Components provided by Bootstrap -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Interactive Bootstrap</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.0.0/journal/bootstrap.min.css" />
+</head>
+
+<body style="margin-top: 60px;">
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <a class="navbar-brand" href="#">Bathroom Finder</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#features">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#faq">FAQ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#chat">Chat</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#join">Join</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div id="#home" class="jumbotron text-center mt-4">
+    <h1 class="display-4">Welcome to Bathroom Finder!</h1>
+    <p class="lead">A convenient and easy to use public restroom locator.</p>
+    <p class="lead">Find restrooms by location, rating, and much more!</p>
+    <p style="font-size: 14pt;">Sign up now before you need it!
+      <span role="img" aria-label="Water">💦</span>
+      <span role="img" aria-label="Weary Face">😩</span>
+    </p>
+    <a class="btn btn-primary btn-lg" href="#join" role="button">Sign Up</a>
+    <div id="features"></div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Thousands Of Locations All Over The World</h3>
+      </div>
+      <div class="col-md-6">
+        <img src="images/map.png" class="img-fluid" alt="Map">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Browse The World's Most Upscale Public Restrooms</h3>
+      </div>
+      <div class="col-md-6">
+        <img src="images/bathroom.jpg" class="img-fluid" alt="Public Restroom">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Find Your Perfect Restroom By Rating</h3>
+      </div>
+      <div class="col-md-6">
+        <img src="images/ratings.png" class="img-fluid" alt="Ratings">
+      </div>
+      <div id="faq"></div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <h3>Why Bathroom Finder?</h3>
+        <p>T-bone short ribs do venison fatback ham. Hamburger laborum pastrami ut ullamco sed. Frankfurter consequat prosciutto,
+          pig drumstick tenderloin ad andouille ipsum proident kielbasa. Short ribs pig porchetta sint. Pancetta sint eu
+          ball tip burgdoggen irure short ribs t-bone ad ut. Ham pork belly shank, aliquip lorem brisket beef shoulder nisi
+          veniam quis.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <h3>What Does It Cost?</h3>
+        <p>Tempor incididunt pancetta, nulla eu sunt pork chop lorem turkey brisket pork loin landjaeger! Strip steak labore
+          laboris, elit pig exercitation meatloaf adipisicing voluptate. Dolor landjaeger quis tongue sunt frankfurter dolore
+          prosciutto. Enim sirloin lorem aliquip filet mignon id short loin.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 mb-4">
+        <h3>How Does Bathroom Finder Help Business Owners?</h3>
+        <div id="chat"></div>
+        <p>Leberkas ut aute fugiat buffalo prosciutto eiusmod tongue. Lorem laboris chicken, veniam tenderloin ham hock laborum
+          velit filet mignon ut drumstick. Excepteur porchetta id eu aliquip, enim sunt. Sunt aliquip pork chop enim lorem
+          tempor anim exercitation swine turducken. Officia do chuck lorem et aliquip tempor ball tip irure strip steak elit
+          cow fatback flank. Consectetur occaecat quis sed frankfurter beef ribs sint ground round. Drumstick shankle cupidatat
+          sint, beef prosciutto duis chuck sausage landjaeger.
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 text-center mb-4 mt-4">
+        <h3>Let's Chat</h3>
+        <button class="btn btn-primary">Chat</button>
+      </div>
+    </div>
+    <div id="join"></div>
+    <div class="row">
+      <div class="col-md-12 text-center mt-4">
+        <h3>Sign Up For Free</h3>
+        <div class="col-md-6 offset-3">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with third parties.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Send Me Occasional Promotional Offers</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Sign Up</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid mt-4">
+    <div class="row bg-dark text-white">
+      <div class="col-md-4 mb-4 mt-4 pt-4 pb-4">
+        <h3>What we do</h3>
+        <ul>
+          <li>
+             Bathrooms
+          </li>
+          <li>
+            Search
+          </li>
+          <li>
+            Reviews
+          </li>
+          <li>
+            Small Business
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-4 mb-4 mt-4 pt-4 pb-4">
+        <h3>Latest from our Blog</h3>
+        <ul>
+          <li>
+            The Customer Journey
+          </li>
+          <li>
+            What Makes a Good Restroom?
+          </li>
+          <li>
+            Laws in Your State
+          </li>
+          <li>
+            Our Mission
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-4 mb-4 mt-4 pt-4 pb-4">
+        <h3>Join Our Mailing List</h3>
+        <form class="form-inline">
+          <input type="text" class="form-control mb-2 mr-sm-2" placeholder="Jane@doe.com">
+          <button type="submit" class="btn btn-primary mb-2">Join</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
