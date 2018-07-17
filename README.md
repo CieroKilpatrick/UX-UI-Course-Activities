@@ -2,4 +2,4 @@
 
 Week 20 Files - Advanced Web Prototyping
 
-Use the green clone/download button to download a .zip file of class activities.
+Use the green 'Clone or Download' button to download a .zip file of class activities.
